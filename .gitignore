@@ -1,0 +1,5 @@
+//arquivos que devem ficar alocados na maquina
+
+node_modules/
+src/css&sass/.sass-cache/
+src/css&sass/style.css.map

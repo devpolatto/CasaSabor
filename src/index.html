@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cozinha | Casa Sabor</title>
+    <!-- font-awesome -->
+    <!--<link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.css">-->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="css&sass/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <span class="btn-open" onclick="openNav()"><i class="fas fa-align-justify"></i></span>
+  <!-- overlay -->
+  <div id="myNav" class="overlay">
+    <a class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#">empresa</a>
+      <a href="#">serviços</a>
+      <a href="#">clientes</a>
+      <a href="#">gestão</a>
+      <a href="#">contat</a>
+      <a href="#">segurança</a>
+    </div>
+  </div>
+
+  <div id="home-header">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="../img/header1.png" alt="Primeiro Slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="../img/fob.jpg" alt="Segundo Slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="../img/mesa.jpg" alt="Terceiro Slide">
+        </div>
+      </div>
+      <!--<a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>-->
+    </div>
+  </div>
+
+  <div id="servicos">
+    <div class="container">
+      <div class="servicos-icons">
+        <div class="items">
+          <a href="#"><img src="../img/icons/delivery-truck.png" alt=""></a>
+          <p>simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <div class="items">
+          <a href="#"><img src="../img/icons/fork.png" alt=""></a>
+          <p>simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <div class="items">
+          <a href="#"><img src="../img/icons/steering-wheel.png" alt=""></a>
+          <p>simply dummy text of the printing and typesetting industry.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- meu scripts -->
+  <script src="js/menu_fullscreen.js"></script>
+  <!-- jQuery first, then Popper.js then Bootstrap JS -->
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <script src="../node_modules/popper.js/dist/umd/popper.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>

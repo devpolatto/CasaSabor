@@ -14,6 +14,33 @@
 
 <body>
 
+  <div class="smoothscroll-top">
+    <span class="scroll-top-inner">
+        <i class="fa fa-2x fa-arrow-circle-up"></i>
+    </span>
+  </div>
+
+  <script>
+    $(function(){
+    $(document).on( 'scroll', function(){
+        if ($(window).scrollTop() > 100) {
+            $('.smoothscroll-top').addClass('show');
+        } else {
+            $('.smoothscroll-top').removeClass('show');
+        }
+    });
+    $('.smoothscroll-top').on('click', scrollToTop);
+});
+ 
+function scrollToTop() {
+    verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+    element = $('body');
+    offset = element.offset();
+    offsetTop = offset.top;
+    $('html, body').animate({scrollTop: offsetTop}, 600, 'linear').animate({scrollTop:25},200).animate({scrollTop:0},150) .animate({scrollTop:0},50);
+}
+  </script>
+
   <span class="btn-open" onclick="openNav()"><i class="fas fa-align-justify"></i></span>
   <!-- overlay -->
   <div id="myNav" class="overlay">
@@ -23,7 +50,7 @@
       <a href="#">serviços</a>
       <a href="#">clientes</a>
       <a href="#">gestão</a>
-      <a href="#">contat</a>
+      <a href="#">contato</a>
       <a href="#">segurança</a>
     </div>
   </div>
@@ -94,19 +121,16 @@
             <h2>Gestão</h2>
             <p>A base do nosso serviçoé desenvolver e capacitar nossos funcionários, 
               buscando o aprimaroamento contínuo, envolvimento, e sempre com foco no cliente.</p>
-          </div>
+        </div>
           <div class="modelos-img">
-            <img src="../img/cozinheiro-casa-sabor.png" alt="cozinheiro">
             <img src="../img/sistema-gestao.png" alt="sistema de gestão">
-          </div>
-          <div class="satisfacao">
             <img src="../img/satisfacao.png" alt="satisfacao">
-            <p>Para a melhoria contínua do serviço, é necessário o aperfeiçoamento contínuo dos colaboradores.
+          </div>
+          <p>Para a melhoria contínua do serviço, é necessário o aperfeiçoamento contínuo dos colaboradores.
               Dessa forma  o casa sabor realiza procedimento operacionais padrão (<strong>POPs</strong>), ficha técnica
               de produção e manual de boas práticas de fabricação, investindo no treinamento contínuo de seus 
               colaboradores.
             </p>
-          </div>
     </div>
   </div>
 
@@ -128,7 +152,7 @@
                   <button type="button" class="btn btn-outline-primary btn-lg">Primary</button>
               </div>
             </div>
-            <div class="carousel-item">
+            _<!--<div class="carousel-item">
               <img src="../img/navio2.jpg" class="d-block w-100" alt="..." height="500">
               <div class="carousel-caption d-none d-md-block">
                 <h2>Second slide label</h2>
@@ -136,7 +160,7 @@
                 <button type="button" class="btn btn-outline-primary btn-lg">Primary</button>
                   <button type="button" class="btn btn-outline-primary btn-lg">Primary</button>
               </div>
-            </div>
+            </div>-->
           </div>
           <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -150,15 +174,33 @@
       </div> 
   </div>
 
-  <div id="seguranca">
+  <div id="arquivos">
     <div class="container">
-      <h2>Seguranca</h2>  
-      <p>
-          Para garantir a segurança alimentar, 
-          o Casa Sabor possui equipamentos, infraestrutura, 
-          equipe qualificada, fornecedores homologados e 
-          controle durante todo processo produtivo.</p>
-    </div>
+        <div class="row">
+            <div class="col-4">
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Alvará de localização e funcionamento</li>
+                  <li class="list-group-item">Licença sanitária</li>
+                  <li class="list-group-item">Licença de Operação e Meio Ambiente</li>
+                  <li class="list-group-item">Licença do Corpo de Bombeiros</li>
+                  <li class="list-group-item">Registro da empresa no Conselho Regional de Nutrição</li>
+                  <li class="list-group-item">Registro no PAT</li>
+                  <li class="list-group-item">Registro de Responsabilidade Técnica junto ao CRN</li>
+                  <li class="list-group-item">Registro na ANVISA</li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">ISO 9001</li>
+                    <li class="list-group-item">PPRA</li>
+                    <li class="list-group-item">PCMSO</li>
+                    <li class="list-group-item">Manual de Boas Práticas de Fabricação</li>
+                    <li class="list-group-item">POP´s Padronizados com registros diários do monitoramento da qualidade da operação</li>
+                    <li class="list-group-item">Registro da empresa no Conselho Regional de Nutrição</li>
+                    <li class="list-group-item">Mapa de Risco</li>
+                </ul>
+            </div>
+        </div>
   </div>
 
 

@@ -234,7 +234,7 @@ body {
         }
     }
     .modelos-img {
-        margin: 10px 0;
+        margin: 10px 0px;
         display: flex;
         text-align: center;
         justify-content: center;
@@ -267,10 +267,7 @@ body {
 }
 
 #fob{
-    .carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption h5 {
-
-    }
-
+    z-index: 0 !important;
 }
 
 #arquivos {
@@ -278,9 +275,69 @@ body {
     text-align: center;
     justify-content: center;
     padding: 20px 0;
-    .row .list-group {
-        list-style: circle;
-    } 
+    img {
+        height: 150px;
+    }
+}
+
+#form-contato {
+    background: url("../../img/bg-cinato.jpg") no-repeat;
+    padding: 10px 0px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    filter: brightness(50%);
+    z-index: 0;
+    .container {
+        padding-right: 40px !important;
+        padding-left: 40px !important;
+    }
+    .header-contato h2 {
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 3.5em;
+        font-family:  'Crimson Text', 'Vollkorn', serif;
+    }
+}
+
+#footer {
+    padding: 0px 0px 0px 0;
+    background-color: #0c1b22;
+    text-align: center;
+    .contato{
+        padding: 20px 0;
+        h3 {
+            color: #fff;
+            margin-bottom: 1px;
+        }
+        p {
+            color: #fff;
+            margin-bottom: 0;
+        }
+        h5 {
+            color: rgb(214, 211, 211);
+            font-size: .9em;    
+        }
+    }
+    .referencia {
+        border-top-width: 2px;
+        border-top-style: solid;
+        border-top-color: #17272e;
+        font-size: 1.0em;
+        width: 100%;
+        color: #fff;
+        padding: 5px 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        p a {
+            color: rgb(40, 210, 240);
+            margin-bottom: 0 !important;
+        }
+        p {
+            margin-bottom: 0 !important;
+        }
+    }
 }
 
 
